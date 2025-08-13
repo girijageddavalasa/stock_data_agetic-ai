@@ -1,26 +1,50 @@
 # Multi-Agent Stock Summary Bot (NVDA Example)
 
-This project demonstrates how to build an **autonomous AI agent team** using [phidata](https://github.com/phidatahq/phidata) to:
-1. Search the web for stock-related news.
-2. Retrieve analyst recommendations and financial data.
-3. Combine results into a neat, markdown-friendly summary.
-
-The example uses **NVDA (NVIDIA)** as the target stock.
+This project builds an **autonomous agent team** using [phidata](https://github.com/phidatahq/phidata) that:
+1. Pulls **analyst recommendations + fundamentals + price** via Yahoo Finance  
+2. Fetches **latest news** via DuckDuckGo search  
+3. Combines and formats them neatly using Groq models.
 
 ---
 
-## Features
-- **Two specialized agents**:
-  - **Web Search Agent** → Uses DuckDuckGo for the latest news (with sources).
-  - **Financial Agent** → Uses Yahoo Finance tools for analyst recommendations, fundamentals, and stock prices.
-- **Team Agent** → Combines the above into a single response.
-- **Tables and markdown formatting** for clean output.
+## Output Screenshots
+
+Here are four sample outputs from running the script:
+
+<table>
+  <tr>
+    <td align="center">
+      <b>📊 Analyst Recommendations</b><br>
+      <img src="assets/1.png" alt="Analyst Recommendations" width="400">
+    </td>
+    <td align="center">
+      <b>📰 Latest News</b><br>
+      <img src="assets/2.png" alt="Latest News" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>💹 Stock Fundamentals</b><br>
+      <img src="assets/3.png" alt="Stock Fundamentals" width="400">
+    </td>
+    <td align="center">
+      <b>📈 Price Chart</b><br>
+      <img src="assets/4.png" alt="Price Chart" width="400">
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Setup
+## How It Works
+- **Agent 1:** Fetches stock data, analyst ratings, fundamentals, price chart.  
+- **Agent 2:** Searches the web for the latest company news.  
+- **Team Agent:** Combines both results into a single markdown response.
 
-### 1. Clone & Install
+---
+
+## Installation
+
 ```bash
 git clone <your-repo-url>
 cd firstagentic

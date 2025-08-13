@@ -15,21 +15,21 @@ Here are four sample outputs from running the script:
   <tr>
     <td align="center">
       <b>📊 Analyst Recommendations</b><br>
-      <img src="assets/1.png" alt="Analyst Recommendations" width="400">
+      <img src="1.png" alt="Analyst Recommendations" width="400">
     </td>
     <td align="center">
       <b>📰 Latest News</b><br>
-      <img src="assets/2.png" alt="Latest News" width="400">
+      <img src="2.png" alt="Latest News" width="400">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>💹 Stock Fundamentals</b><br>
-      <img src="assets/3.png" alt="Stock Fundamentals" width="400">
+      <img src="3.png" alt="Stock Fundamentals" width="400">
     </td>
     <td align="center">
       <b>📈 Price Chart</b><br>
-      <img src="assets/4.png" alt="Price Chart" width="400">
+      <img src="4.png" alt="Price Chart" width="400">
     </td>
   </tr>
 </table>
